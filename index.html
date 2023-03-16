@@ -78,7 +78,13 @@
             <p class="lead">
               Sign up today to start receiving the world's best whiskeys every
               month.
-              <s>€19.99</s> <strong><mark>First one is free!</mark></strong>
+              <!-- s - makes the element look like a strikethrough;
+              d-none d-sm-inline - hides the element on small and down screens -->
+              <s class="d-none d-sm-inline">€19.99</s>
+              <!-- creates a line break on small screens -->
+              <span class="d-inline d-sm-none"><br></span>
+              <!-- mark - makes the element look like a highlight -->
+              <strong><mark>First one is free!</mark></strong>
             </p>
             <button class="btn btn-success btn-lg">Sign Up!</button>
             <p>
