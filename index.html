@@ -7,7 +7,9 @@
     <title>Whiskey Drop | Taste a new whiskey every month</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
     />
     <style>
       body {
@@ -57,11 +59,50 @@
         mr-2 - adds a margin to the right of the element -->
           <li class="active nav-item mr-2">
             <!-- nav-link - makes the element look like a link -->
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="">Home</a>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="">About</a>
           </li>
+
+          <!-- dropdown - creates a dropdown menu
+          Attributes:
+          data-toggle - creates a dropdown list;
+          ---
+          role="button" - tells screen readers that the element is a button;
+          aria-haspopup - tells screen readers that the element has a dropdown list;
+          -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarNavDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Whiskeys
+            </a>
+            <!-- dropdown-menu
+            Attributes:
+            aria-labelledby - tells screen readers which element controls the dropdown list;
+            ---
+            dropdown-item - makes the element look like a link;
+            -->
+            <div
+              class="dropdown-menu"
+              aria-labelledby="navbarNavDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">All Whiskeys</a>
+              <a class="dropdown-item" href="#">American</a>
+              <a class="dropdown-item" href="#">Irish</a>
+              <a class="dropdown-item" href="#">Scotch</a>
+              <a class="dropdown-item" href="#">Japanese</a>
+              <a class="dropdown-item" href="#">Other</a>
+            </div>
+          </li>
+
           <!-- d-md-none - hides the element on medium and up screens -->
           <li class="nav-item mr-2 d-md-none">
             <a class="nav-link" href="/login">Sign In / Sign Up</a>
@@ -279,11 +320,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
   </body>
