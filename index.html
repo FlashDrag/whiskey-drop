@@ -11,17 +11,7 @@
     />
     <style>
       body {
-        padding-top: 60px;
-      }
-      @media (max-width: 576px) {
-        body {
-          padding-top: 140px;
-        }
-      }
-      @media (max-width: 298px) {
-        body {
-          padding-top: 180px;
-        }
+        padding-top: 4rem;
       }
     </style>
   </head>
@@ -51,29 +41,33 @@
         data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown"
         aria-expanded="false"
-        aria-label="Toggle navigation">
+        aria-label="Toggle navigation"
+      >
         <!-- navbar-toggler-icon - a bootstrap class that creates a hamburger icon -->
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- navbar-nav - makes the nav items look like links;
+      <!-- navbar-collapse - a bootstrap class that collapses the navbar on small screens; -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <!-- navbar-nav - makes the nav items look like links;
       mr-auto is a bootstrap class that aligns the nav items to the right -->
-      <ul class="navbar-nav mr-auto">
-        <!-- active - highlights the the element;
+        <ul class="navbar-nav mr-auto">
+          <!-- active - highlights the the element;
         nav-item - makes the element look like a link;
         mr-2 - adds a margin to the right of the element -->
-        <li class="active nav-item mr-2">
-          <!-- nav-link - makes the element look like a link -->
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item mr-2">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-        <!-- d-md-none - hides the element on medium and up screens -->
-        <li class="nav-item mr-2 d-md-none">
-          <a class="nav-link" href="/login">Sign In / Sign Up</a>
-        </li>
-      </ul>
+          <li class="active nav-item mr-2">
+            <!-- nav-link - makes the element look like a link -->
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <!-- d-md-none - hides the element on medium and up screens -->
+          <li class="nav-item mr-2 d-md-none">
+            <a class="nav-link" href="/login">Sign In / Sign Up</a>
+          </li>
+        </ul>
+      </div>
       <!-- d-none d-md-block - hides the element on small and down screens -->
       <div class="d-none d-md-block">
         <!-- navbar-text - makes the element look like text (not a link);
