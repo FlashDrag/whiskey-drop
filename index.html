@@ -82,7 +82,7 @@
               d-none d-sm-inline - hides the element on small and down screens -->
               <s class="d-none d-sm-inline">€19.99</s>
               <!-- creates a line break on small screens -->
-              <span class="d-inline d-sm-none"><br></span>
+              <span class="d-inline d-sm-none"><br /></span>
               <!-- mark - makes the element look like a highlight -->
               <strong><mark>First one is free!</mark></strong>
             </p>
@@ -109,19 +109,45 @@
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-            <blockquote class="blockquote">
-              <p>
-                I've been introduced to more than 10 great international
-                whiskeys I never knew about.
-              </p>
-              <p>- Jane Doe</p>
-            </blockquote>
+            <!-- media and media-body -  align media objects (like images or videos) to the left or to the right of some content -->
+            <div class="media">
+              <div class="d-none d-sm-block">
+                <img
+                  src="assets/images/girl-image.png"
+                  class="rounded-circle mr-3"
+                  height="100"
+                  alt="girl wearing a hat"
+                />
+              </div>
+              <!-- Text that should appear next to the image, is placed inside a container with class="media-body" -->
+              <div class="media-body">
+                <blockquote class="blockquote">
+                  <p>
+                    I've been introduced to more than 10 great international
+                    whiskeys I never knew about.
+                  </p>
+                  <p>- Jane Doe</p>
+                </blockquote>
+              </div>
+            </div>
           </div>
           <div class="col-12 col-md-6">
-            <blockquote class="blockquote">
-              <p>I haven't been sober for months!</p>
-              <p>- Jane Doe</p>
-            </blockquote>
+            <div class="media">
+              <div class="d-none d-sm-block">
+                <img
+                  src="assets/images/guy-image.png"
+                  class="rounded-circle mr-3"
+                  height="100"
+                  alt="guy with a long beard"
+                />
+              </div>
+              <div class="media-body">
+                <blockquote class="blockquote">
+                  <p>I haven't been sober for months!</p>
+                  <p>- William Smith</p>
+                </blockquote>
+              </div>
+            </div>
           </div>
         </div>
       </section>
