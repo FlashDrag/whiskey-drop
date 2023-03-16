@@ -31,12 +31,19 @@
         <li class="nav-item mr-2">
           <a class="nav-link" href="/about">About</a>
         </li>
+        <!-- d-md-none - hides the element on medium and up screens -->
+        <li class="nav-item mr-2 d-md-none">
+          <a class="nav-link" href="/login">Sign In / Sign Up</a>
+        </li>
       </ul>
-      <!-- navbar-text - makes the element look like text (not a link);
-      my-auto - aligns the element vertically adding a margin to the top and bottom;
-      mr-2 - adds a margin to the right of the element -->
-      <p class="navbar-text my-auto mr-3"><i>Great whiskey delivered to your door!</i></p>
-      <a href="/login">Sign In / Sign Up</a>
+      <!-- d-none d-md-block - hides the element on small and down screens -->
+      <div class="d-none d-md-block">
+        <!-- navbar-text - makes the element look like text (not a link);
+        my-auto - aligns the element vertically adding a margin to the top and bottom;
+        mr-2 - adds a margin to the right of the element -->
+        <p class="navbar-text my-auto mr-3"><i>Great whiskey delivered to your door!</i></p>
+        <a href="/login">Sign In / Sign Up</a>
+      </div>
     </nav>
 
     <!-- container is a bootstrap class used to create a single centered column down the page -->
