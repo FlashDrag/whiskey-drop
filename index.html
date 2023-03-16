@@ -9,13 +9,29 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     />
+    <style>
+      body {
+        padding-top: 60px;
+      }
+      @media (max-width: 576px) {
+        body {
+          padding-top: 140px;
+        }
+      }
+      @media (max-width: 298px) {
+        body {
+          padding-top: 180px;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <!-- navbar - a bootstrap class that creates a navigation bar;
       navbar-light - makes the navbar light colored;
-      navbar-expand-sm - makes the navbar responsive and expands it on 576px screens and up -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+      navbar-expand-sm - makes the navbar responsive and expands it on 576px screens and up;
+      fixed-top - makes the navbar fixed to the top of the page, but you need to add padding to the body to make room for it -->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
       <!-- text-based brand name link header -->
       <a href="/" class="navbar-brand">Whiskey Drop</a>
       <!-- navbar-nav - makes the nav items look like links;
@@ -41,7 +57,9 @@
         <!-- navbar-text - makes the element look like text (not a link);
         my-auto - aligns the element vertically adding a margin to the top and bottom;
         mr-2 - adds a margin to the right of the element -->
-        <p class="navbar-text my-auto mr-3"><i>Great whiskey delivered to your door!</i></p>
+        <p class="navbar-text my-auto mr-3">
+          <i>Great whiskey delivered to your door!</i>
+        </p>
         <a href="/login">Sign In / Sign Up</a>
       </div>
     </nav>
