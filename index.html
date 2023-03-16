@@ -12,6 +12,33 @@
   </head>
 
   <body>
+    <!-- navbar - a bootstrap class that creates a navigation bar;
+      navbar-light - makes the navbar light colored;
+      navbar-expand-sm - makes the navbar responsive and expands it on 576px screens and up -->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+      <!-- text-based brand name link header -->
+      <a href="/" class="navbar-brand">Whiskey Drop</a>
+      <!-- navbar-nav - makes the nav items look like links;
+      mr-auto is a bootstrap class that aligns the nav items to the right -->
+      <ul class="navbar-nav mr-auto">
+        <!-- active - highlights the the element;
+        nav-item - makes the element look like a link;
+        mr-2 - adds a margin to the right of the element -->
+        <li class="active nav-item mr-2">
+          <!-- nav-link - makes the element look like a link -->
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item mr-2">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+      <!-- navbar-text - makes the element look like text (not a link);
+      my-auto - aligns the element vertically adding a margin to the top and bottom;
+      mr-2 - adds a margin to the right of the element -->
+      <p class="navbar-text my-auto mr-3"><i>Great whiskey delivered to your door!</i></p>
+      <a href="/login">Sign In / Sign Up</a>
+    </nav>
+
     <!-- container is a bootstrap class used to create a single centered column down the page -->
     <article class="container">
       <!-- Callout -->
