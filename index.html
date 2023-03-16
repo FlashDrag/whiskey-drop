@@ -34,6 +34,28 @@
     <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
       <!-- text-based brand name link header -->
       <a href="/" class="navbar-brand">Whiskey Drop</a>
+
+      <!-- button that toggles the navbar on small screens
+        Attributes:
+        data-toggle - specifies the action to be performed when the button is clicked, collapse - the type of toggle;
+        data-target - which element to toggle (to collapse or expand);
+        ---
+        aria-controls - tells screen readers which element to toggle;
+        aria-expanded - tells screen readers whether the element is expanded or not;
+        aria-label - tells screen readers what the button does
+        -->
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <!-- navbar-toggler-icon - a bootstrap class that creates a hamburger icon -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
       <!-- navbar-nav - makes the nav items look like links;
       mr-auto is a bootstrap class that aligns the nav items to the right -->
       <ul class="navbar-nav mr-auto">
