@@ -9,6 +9,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container-wrapper {}
+
+.container-wrapper--red {
+  background-color: #f05f40;
+  color: white;
+}
+
 .alert-container .col-12 {
   padding-left: 0;
   padding-right: 0;
@@ -64,7 +71,7 @@ body {
 
 /* Page headers */
 .page-header {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   border-bottom: 0;
   text-align: center;
 }
@@ -127,6 +134,10 @@ body {
   width: 35px;
 }
 
+.block-divider--white {
+  background-color: white;
+}
+
 /* Jumbotron */
 
 .jumbotron {
@@ -172,4 +183,25 @@ body {
   background-color: #df4929;
   border-color: #df4929;
   color: white;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature i {
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.feature .btn {
+  background-color: white;
+  border-color: white;
+  border-radius: 15px;
+  min-width: 100px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #f05f40;
 }
