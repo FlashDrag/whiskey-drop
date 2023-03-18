@@ -19,6 +19,10 @@ body {
   -moz-background-size: cover; /* Firefox */
   -o-background-size: cover; /* For pre-WebKit versions of Opera */
   background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .quotes-container {
