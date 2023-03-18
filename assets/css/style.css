@@ -1,5 +1,5 @@
 body {
-  padding-top: 4rem;
+  padding-top: 3rem;
   font-family: "Roboto", sans-serif;
 }
 
@@ -23,6 +23,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
+}
+
+/* The opaque overlay, which is used to darken the background image */
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .quotes-container {
@@ -32,4 +44,43 @@ body {
 }
 
 .favorites-container {
+}
+
+
+/* Block dividers */
+.block-divider {
+  width: 75px;
+  height: 5px;
+  border: 0;
+}
+
+.block-divider--orange {
+    background-color: #f05f40;
+}
+
+.block-divider--short {
+  width: 35px;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: transparent;
+}
+
+.jumbotron h1 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.jumbotron .lead {
+  color: #a9a9a9;
+  margin: 25px 0;
+}
+
+.jumbotron small {
+  font-size: 60%;
+  font-style: italic;
+  color: #d0d0d0 !important;
 }
