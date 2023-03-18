@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <title>Whiskey Drop | Taste a new whiskey every month</title>
   </head>
@@ -125,9 +125,9 @@
       </div>
     </nav>
 
-    <!-- container is a bootstrap class used to create a single centered column down the page;
-    mt-2 - adds a margin to the top of the element -->
-    <article class="container mt-2">
+    <!-- Alert -->
+    <!-- container is a bootstrap class used to create a single centered column down the page -->
+    <div class="container alert-container">
       <div class="row d-none d-sm-block">
         <div class="col-12">
           <div class="alert alert-warning">
@@ -137,9 +137,13 @@
           </div>
         </div>
       </div>
-      <!-- Callout -->
+    </div>
+    <!-- Alert -->
+
+    <!-- Callout -->
+    <div class="container callout-container">
       <!-- It's the first thing that a user sees when they open our page.
-      This is a marketing term describing the main focus, or action, that we want the user to take when they enter our page -->
+        This is a marketing term describing the main focus, or action, that we want the user to take when they enter our page -->
       <div class="row">
         <div class="col-12">
           <!-- jumbotron - makes the element look like a callout (a box with a background color)  -->
@@ -149,7 +153,7 @@
               Sign up today to start receiving the world's best whiskeys every
               month.
               <!-- s - makes the element look like a strikethrough;
-              d-none d-sm-inline - hides the element on small and down screens -->
+                d-none d-sm-inline - hides the element on small and down screens -->
               <s class="d-none d-sm-inline">€19.99</s>
               <!-- creates a line break on small screens -->
               <span class="d-inline d-sm-none"><br /></span>
@@ -172,10 +176,11 @@
           </section>
         </div>
       </div>
-      <!-- /.callout -->
-      <hr />
+    </div>
+    <!-- /.callout -->
 
-      <!-- Quotes -->
+    <!-- Quotes -->
+    <div class="container quotes-container">
       <section class="quotes">
         <div class="row">
           <!-- my-5 - adds a margin to the top and bottom of the element -->
@@ -227,10 +232,11 @@
           </div>
         </div>
       </section>
-      <!-- /.quotes -->
-      <hr />
+    </div>
+    <!-- /.quotes -->
 
-      <!-- Features -->
+    <!-- Features -->
+    <div class="container features-container">
       <section class="features">
         <div class="row">
           <!-- my-5 - adds a margin to the top and bottom of the element -->
@@ -281,6 +287,11 @@
           </div>
         </div>
       </section>
+    </div>
+    <!-- /.features -->
+
+    <!-- Favorites -->
+    <div class="container favorites-container">
       <section class="favorites">
         <h2>Monthly favorites</h2>
         <table class="table">
@@ -312,7 +323,9 @@
           </tr>
         </table>
       </section>
-    </article>
+    </div>
+    <!-- /.favorites -->
+
     <!-- modal - a dialog box/popup window that is displayed on top of the current page
     It must be direct child of the body (i.e. top level) element as it covers the entire screen -->
     <div class="modal" tabindex="-1" id="signUpModal">
@@ -361,6 +374,7 @@
         </div>
       </div>
     </div>
+
     <script
       src="https://kit.fontawesome.com/b4aef698f5.js"
       crossorigin="anonymous"
