@@ -1,14 +1,31 @@
 body {
-    padding-top: 4rem;
-    font-family: "Roboto", sans-serif;
-  }
+  padding-top: 4rem;
+  font-family: "Roboto", sans-serif;
+}
 
-.alert-container{}
+.alert-container {
+}
 
-.callout-container{}
+.callout-container {
+  /* 100vh - the height of the viewport is equal to the height of the device's window,
+   meaning that the background image will cover the entire screen */
+  height: 100vh;
+  /* no-repeat - the image is not repeated, meaning it will only be displayed once
+  bottom right - the image is positioned at the bottom right corner of the container
+  fixed - the image is fixed in the viewport, which means that it will stay in the same position even if the page is scrolled
+  cover - the image is scaled to be as large as possible so that the container is completely covered by the background image */
+  background: url(../images/whiskey-background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover; /* Chrome, Safari, newer versions of Opera and Edge, almost all iOS browsers including Firefox for iOS*/
+  -moz-background-size: cover; /* Firefox */
+  -o-background-size: cover; /* For pre-WebKit versions of Opera */
+  background-size: cover;
+}
 
-.quotes-container{}
+.quotes-container {
+}
 
-.features-container{}
+.features-container {
+}
 
-.favorites-container{}
+.favorites-container {
+}
